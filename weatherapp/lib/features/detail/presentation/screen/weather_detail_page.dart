@@ -1,4 +1,7 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
+import 'package:weatherapp/features/detail/presentation/widget/body.dart';
 import 'package:weatherapp/features/detail/presentation/widget/header.dart';
 import 'package:weatherapp/features/detail/presentation/widget/wether_temprature.dart';
 
@@ -12,13 +15,7 @@ class WeatherDetail extends StatefulWidget {
 class _WeatherDetailState extends State<WeatherDetail> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Column(
-        children: [
-          const Header(),
-          
-        ],
-      ),
-    );
+    return BodyDetail();
+    ;
   }
 }

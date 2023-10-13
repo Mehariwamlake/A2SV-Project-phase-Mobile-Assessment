@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:weatherapp/features/detail/presentation/screen/weather_detail_page.dart';
+import 'package:weatherapp/features/onbording/presentation/page/onbord.dart';
 
 void main() {
   runApp(const MainApp());
@@ -12,7 +13,7 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: WeatherDetail()
+      home: OnboardingScreen()
     );
   }
 }

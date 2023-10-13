@@ -10,3 +10,19 @@ class GetWeather {
     return await repository.getWeather();
   }
 }
+
+class DeleteWeather {
+  final WeatherRepository repository;
+  DeleteWeather({required this.repository});
+  Future<Either<Failure, Weather>> call(String id) async {
+    return await repository.deletWeather(id);
+  }
+}
+
+class PostWeather {
+  final WeatherRepository repository;
+  PostWeather({required this.repository});
+  Future<Either<Failure, Weather>> call(Weather weather) async {
+    return await repository.postWeather(weather);
+  }
+}
